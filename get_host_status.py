@@ -25,6 +25,5 @@ hosts = getObjects(connection, [pyVmomi.vim.HostSystem])  # pylint: disable=no-m
 
 for host in hosts:
     print("{} ---> Status ---> {}".format(host.name, hostStatus(host)))
-    
 
 Disconnect(login)
